@@ -1,0 +1,18 @@
+.calc {
+    background-color: rgb(125, 201, 160);
+    border: 2px;
+    border-radius: 20px;
+    width: 400px;
+    margin-left: 700px;
+    margin-top: 200px;
+    padding: 40px;
+}
+
+.res {
+    padding: 20px;
+    font-size: 15px;
+    background-color: cornsilk;
+    border-radius: 20px;
+    width: 200px;
+}
+
