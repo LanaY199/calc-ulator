@@ -1,18 +1,86 @@
-.calc {
-    background-color: rgb(125, 201, 160);
-    border: 2px;
-    border-radius: 20px;
-    width: 400px;
-    margin-left: 700px;
-    margin-top: 200px;
-    padding: 40px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
 
-.res {
-    padding: 20px;
-    font-size: 15px;
-    background-color: cornsilk;
-    border-radius: 20px;
-    width: 200px;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../calc-ulator/images/7.jpg);
 }
 
+.calculator{
+    width: 240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.calculator span{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: white;
+    font-size: 1.2em;
+    color: rgb(19, 19, 36);
+    font-weight: 500;
+}
+
+.calculator span:hover{
+    cursor: pointer;
+}
+
+.calculator .operations{
+    background: rgb(70, 98, 190);
+    color: rgb(206, 206, 212);
+}
+
+.calculator .clear{
+    background: #e75a5a;
+    color: #fff;
+}
+
+.calculator .inputArea{
+    grid-column: span 4;
+    padding: 20px 10px;
+    outline: none;
+    border: none;
+    font-size: 1.3em;
+}
+
+.calculator .plus{
+    grid-row: span 2;
+    height: 120px;
+    line-height: 120px;
+}
+
+.calculator .equal{
+    width: 120px;
+    grid-column: span 2;
+    background: rgb(253, 188, 107);
+    font-size: 1.8em;
+}
+
+#memory{
+    width: 240px;
+    height: 364px;
+    overflow-y: scroll;
+    font-size: 1.1em;
+    background: rgb(96, 141, 100);
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+#memory::-webkit-scrollbar{
+    width: 0;  
+}
+
+#memory h3{
+   padding: 10px 0px;
+   font-size: 20px;
+   color: rgb(26, 24, 46); 
+}
